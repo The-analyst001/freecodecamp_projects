@@ -60,3 +60,5 @@ def draw_heat_map():
     # Do not modify the next two lines
     fig.savefig('heatmap.png')
     return fig
+medical_data_visualizer.draw_cat_plot()
+medical_data_visualizer.draw_heat_map()
