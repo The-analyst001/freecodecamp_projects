@@ -18,13 +18,7 @@ def draw_line_plot():
     plt.title ('Daily freeCodeCamp Forum Page Views 5/2016-12/2019')
     plt.xlabel('Date')
     plt.ylabel('Page Views')
-
-
-
-
-
-    # Save image and return fig (don't change this part)
-    fig.savefig('line_plot.png')
+    
     return fig
 
 def draw_bar_plot():
@@ -37,9 +31,6 @@ def draw_bar_plot():
     fig = df_bar.plot.bar(legend = True , figsize = (8,8) ,xlabel='Years' , ylabel=('Average Page Views'))
     plt.legend(['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'Sepember', 'October', 'November', 'December'] , title = 'Months')
     
-
-    # Save image and return fig (don't change this part)
-    fig.savefig('bar_plot.png')
     return fig
 
 def draw_box_plot():
@@ -62,6 +53,9 @@ def draw_box_plot():
     axs[1].set_title ('Month-wise Box Plot (Seasonality)')
     axs[1].set_xlabel('Month')
     axs[1].set_ylabel('Page Views')
-    # Save image and return fig (don't change this part)
-    fig.savefig('box_plot.png')
+   
     return fig
+
+draw_line_plot()
+draw_bar_plot()
+draw_box_plot()
